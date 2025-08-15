@@ -1,11 +1,11 @@
-import fs from "fs";
+import fs from "node:fs";
 
-const readFile = (path) => {
+export const readFile = (path) => {
   const conteudo = fs.readFileSync(`${process.env.HOME}/${path}`, "utf8");
   console.log(conteudo);
 };
 
-const fileMetadata = (path) => {
+export const fileMetadata = (path) => {
   const stats = fs.statSync(`${process.env.HOME}/${path}`, "utf8");
 
   let obj = {
@@ -19,4 +19,3 @@ const fileMetadata = (path) => {
   };
   console.log(obj);
 };
-export { readFile, fileMetadata };

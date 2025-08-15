@@ -1,7 +1,7 @@
-import { exportJson, lerArquivo, lerMetaDados } from "./src/";
+import {  lerArquivo, lerMetaDados } from "./src/";
 
 
 
-// lerArquivo(`.zshrc`);
+lerArquivo(`.zshrc`);
 // lerMetaDados(`.zshrc`)
-exportJson('https://rickandmortyapi.com/api/character/2')
+// exportJson('https://rickandmortyapi.com/api/character/2')
