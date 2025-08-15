@@ -1,3 +1,4 @@
+// comentário
 export {
   readFile as lerArquivo,
   fileMetadata as lerMetaDados,
