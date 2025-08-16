@@ -6,7 +6,7 @@ import {
   copyFileSync,
   unlinkSync,
 } from "node:fs";
-import { promisify } from "util";
+
 export const readFile = (path) => {
   const conteudo = readFileSync(`${process.env.HOME}/${path}`, "utf8");
   console.log(conteudo);
